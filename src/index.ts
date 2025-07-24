@@ -3,10 +3,11 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { registerAllTools } from "./tools/index.js";
+import { registerAllPrompts } from "./prompts/index.js";
 
 // Create server instance
 const server = new McpServer({
-  name: "weather",
+  name: "",
   version: "1.0.0",
   capabilities: {
     resources: {},
@@ -16,6 +17,7 @@ const server = new McpServer({
 
 // Register all weather tools
 registerAllTools(server);
+registerAllPrompts(server);
 
 async function main() {
   const transport = new StdioServerTransport();

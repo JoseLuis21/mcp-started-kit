@@ -4,6 +4,9 @@ src/
 │ └── constants.ts # Constantes de configuración
 ├── types/
 │ └── weather.ts # Interfaces y tipos TypeScript
+├── prompts/
+│ ├── prompt.ts # Ayuda para la ia de como obtener un dato
+│ └── index.ts # Registro de todos los prompts
 ├── tools/
 │ ├── alerts.ts # Herramienta de alertas meteorológicas
 │ ├── forecast.ts # Herramienta de pronóstico del tiempo
